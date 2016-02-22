@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+	</head>
+	<body>
+		<form action="login">
+		
+			Usuario: <input type="text" name="user"/>
+			<br/>
+			Senha:  <input type="text" name="pass"/>
+			<br/>
+			
+		
+			<input type="submit" value="Entrar">
+		
+		
+		</form>
+	
+	
+	</body>
+</html>

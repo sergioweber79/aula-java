@@ -1,0 +1,42 @@
+
+import java.io.IOException;
+
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+@WebServlet(name="/servlet")
+public class MyServlet extends HttpServlet {
+	
+	
+	
+	/**
+	 *
+	 * seriaID
+	 */
+	private static final long serialVersionUID = -7065261186534307667L;
+
+	
+	
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		
+		
+		
+		StringBuilder sb = new StringBuilder();
+		
+		resp.setContentType("text/json");
+		
+		resp.getWriter().append(sb);
+		
+		
+		
+	}
+
+}

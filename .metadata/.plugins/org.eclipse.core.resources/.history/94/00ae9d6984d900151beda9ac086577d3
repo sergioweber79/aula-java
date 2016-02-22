@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>  
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro Usuarios</title>
+	</head>
+	<body>
+		<form action="/servlet">
+		
+			Nome: <input type="text" name="name"/>
+			<br/>
+			Email:  <input type="text" name="email"/>
+			<br/>
+			Endereco:  <input type="text" name="address"/>
+			<br/>
+			Nascimento:  <input type="text" name="birthDay"/>
+			<br/>
+			<input type="submit" value="Enviar">
+		
+		
+		</form>
+	</body>
+</html>

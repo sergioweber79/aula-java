@@ -1,0 +1,8 @@
+import javax.servlet.annotation.ServletSecurity;
+import javax.servlet.annotation.WebServlet;
+
+
+@WebServlet
+public class MyServlet {
+
+}

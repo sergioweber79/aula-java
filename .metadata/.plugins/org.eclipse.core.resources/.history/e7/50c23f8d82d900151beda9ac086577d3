@@ -1,0 +1,79 @@
+
+public class User {
+
+	
+	private String name;
+	private String pass;
+	
+	
+	public User(){
+		
+	}
+	
+	private User(Builder b){
+		this.name=b.name;
+		this.pass=b.pass;
+	}
+	
+	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+
+	public static Builder builder(){
+		return new Builder();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj != null){
+			if (obj instanceof User){
+				User u = (User) obj;
+				if (u.name.equals(this.getName()) && u.pass.equals(this.getPass()) ){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	
+
+	public static class Builder{
+		
+		private String name;
+		private String pass;
+		
+		
+		private Builder(){
+			
+		}
+		
+		public Builder name(String name){
+			this.name=name;
+			return this;
+		}
+
+		
+		public Builder pass(String pass){
+			this.pass=pass;
+			return this;
+		}
+
+		
+		public User build(){
+			return new User();
+		}
+		
+		
+	}
+	
+}

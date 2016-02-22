@@ -1,0 +1,58 @@
+
+public class User {
+
+	
+	private String name;
+	private String pass;
+	
+	
+	public User(){
+		
+	}
+	
+	private User(Builder b){
+		this.name=b.name;
+		this.pass=b.pass;
+	}
+	
+	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+
+	public Builder builder(){
+		return new Builder();
+	}
+
+
+	public class Builder{
+		
+		private String name;
+		private String pass;
+		
+		public Builder name(String name){
+			this.name=name;
+			return this;
+		}
+
+		
+		public Builder pass(String pass){
+			this.pass=pass;
+			return this;
+		}
+
+		
+		
+		
+		
+	}
+	
+}

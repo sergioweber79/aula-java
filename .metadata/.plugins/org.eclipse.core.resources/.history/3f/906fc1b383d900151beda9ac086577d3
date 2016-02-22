@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>  
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro Usuarios</title>
+	</head>
+	<body>
+		<form action="/servlet">
+		
+			Nome: <input type="text" name="name">
+			<br/>
+			Eami
+		
+		
+		</form>
+	</body>
+</html>
